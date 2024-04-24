@@ -25,34 +25,34 @@ Esquema de Cenário: Falha no login
     | usuário          | ""             | "Epic sadface: Password is required"                                        |
     | ""               | ""             | "Epic sadface: Username is required"                                        |
 
-//Cenário: Login com usuário inválido
-    Quando eu informo o usuário inválido
-    E a senha válida 
-    E confirmar
-    Então exibe a mensagem "Epic sadface: Username and password do not match any user in this service"
+# //Cenário: Login com usuário inválido
+#     Quando eu informo o usuário inválido
+#     E a senha válida 
+#     E confirmar
+#     Então exibe a mensagem "Epic sadface: Username and password do not match any user in this service"
 
-//Cenário: Login com senha inválida
-    Quando eu informo o usuário válido
-    E a senha inválida
-    E clico no botão login
-    Então exibe a mensagem "Epic sadface: Username and password do not match any user in this service"
+# //Cenário: Login com senha inválida
+#     Quando eu informo o usuário válido
+#     E a senha inválida
+#     E clico no botão login
+#     Então exibe a mensagem "Epic sadface: Username and password do not match any user in this service"
     
-//Cenário: Login com usuário bloqueado
-    Quando eu informo o usuário bloqueado
-    E a senha 
-    E clico no botão login
-    Então exibe a mensagem "Epic sadface: Sorry, this user has been locked out"
+# //Cenário: Login com usuário bloqueado
+#     Quando eu informo o usuário bloqueado
+#     E a senha 
+#     E clico no botão login
+#     Então exibe a mensagem "Epic sadface: Sorry, this user has been locked out"
 
-//Cenário: Login com campo de nome de usuário vazio
-    Quando eu informo a senha 
-    E clico no botão login
-    Então exibe a mensagem "Epic sadface: Username is required"
+# //Cenário: Login com campo de nome de usuário vazio
+#     Quando eu informo a senha 
+#     E clico no botão login
+#     Então exibe a mensagem "Epic sadface: Username is required"
 
-//Cenário: Login com campo de senha vazio
-    Quando eu informo o usuário
-    E clico no botão login
-    Então exibe a mensagem "Epic sadface: Password is required"
+# //Cenário: Login com campo de senha vazio
+#     Quando eu informo o usuário
+#     E clico no botão login
+#     Então exibe a mensagem "Epic sadface: Password is required"
 
-//Cenário: Login com os campos de nome de usuário e senha vazios
-    Quando eu clico no botão login
-    Então exibe a mensagem "Epic sadface: Username is required"
+# //Cenário: Login com os campos de nome de usuário e senha vazios
+#     Quando eu clico no botão login
+#     Então exibe a mensagem "Epic sadface: Username is required"
